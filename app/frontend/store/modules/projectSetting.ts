@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import projectSetting from '@/settings/projectSetting';
+import projectSetting from '../../settings/projectSetting';
 import type { IHeaderSetting, IMenuSetting, IMultiTabsSetting, ICrumbsSetting } from '/#/config';
 
 const {

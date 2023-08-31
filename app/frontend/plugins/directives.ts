@@ -1,10 +1,10 @@
 import { App } from 'vue';
 
-import { permission } from '@/directives/permission';
-import copy from '@/directives/copy';
-import debounce from '@/directives/debounce';
-import throttle from '@/directives/throttle';
-import draggable from '@/directives/draggable';
+import { permission } from '../directives/permission';
+import copy from '../directives/copy';
+import debounce from '../directives/debounce';
+import throttle from '../directives/throttle';
+import draggable from '../directives/draggable';
 
 /**
  * 注册全局自定义指令

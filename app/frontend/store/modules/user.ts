@@ -1,10 +1,10 @@
 import { defineStore } from 'pinia';
-import { store } from '@/store';
-import { ACCESS_TOKEN, CURRENT_USER, IS_SCREENLOCKED } from '@/store/mutation-types';
-import { ResultEnum } from '@/enums/httpEnum';
+import { store } from '../../store';
+import { ACCESS_TOKEN, CURRENT_USER, IS_SCREENLOCKED } from '../../store/mutation-types';
+import { ResultEnum } from '../../enums/httpEnum';
 
-import { getUserInfo as getUserInfoApi, login } from '@/api/system/user';
-import { storage } from '@/utils/Storage';
+import { getUserInfo as getUserInfoApi, login } from '../../api/system/user';
+import { storage } from '../../utils/Storage';
 
 export type UserInfoType = {
   // TODO: add your own data

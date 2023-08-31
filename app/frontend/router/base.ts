@@ -1,4 +1,4 @@
-import { ErrorPage, RedirectName, Layout } from '@/router/constant';
+import { ErrorPage, RedirectName, Layout } from '../router/constant';
 import { RouteRecordRaw } from 'vue-router';
 
 // 404 on a page

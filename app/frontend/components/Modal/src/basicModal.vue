@@ -23,9 +23,9 @@
 <script lang="ts" setup>
   import { getCurrentInstance, ref, nextTick, unref, computed, useAttrs } from 'vue';
   import { basicProps } from './props';
-  import startDrag from '@/utils/Drag';
-  import { deepMerge } from '@/utils';
-  import { FormProps } from '@/components/Form';
+  import startDrag from '../../../utils/Drag';
+  import { deepMerge } from '../../../utils';
+  import { FormProps } from '../../../components/Form';
   import { ModalProps, ModalMethods } from './type';
 
   const attrs = useAttrs();

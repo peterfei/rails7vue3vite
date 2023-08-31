@@ -2,11 +2,11 @@ import type { AxiosRequestConfig, AxiosInstance, AxiosResponse } from 'axios';
 
 import axios from 'axios';
 import { AxiosCanceler } from './axiosCancel';
-import { isFunction } from '@/utils/is';
+import { isFunction } from '../../../utils/is';
 import { cloneDeep } from 'lodash-es';
 
 import type { RequestOptions, CreateAxiosOptions, Result, UploadFileParams } from './types';
-import { ContentTypeEnum } from '@/enums/httpEnum';
+import { ContentTypeEnum } from '../../../enums/httpEnum';
 
 export * from './axiosTransform';
 
@@ -153,7 +153,7 @@ export class VAxios {
       return;
     }
     const {
-      requestInterceptors,
+      // requestInterceptors,
       requestInterceptorsCatch,
       responseInterceptors,
       responseInterceptorsCatch,
@@ -162,21 +162,21 @@ export class VAxios {
     const axiosCanceler = new AxiosCanceler();
 
     // 请求拦截器配置处理
-    this.axiosInstance.interceptors.request.use((config: AxiosRequestConfig) => {
-      const {
-        headers: { ignoreCancelToken },
-      } = config;
-      const ignoreCancel =
-        ignoreCancelToken !== undefined
-          ? ignoreCancelToken
-          : this.options.requestOptions?.ignoreCancelToken;
-
-      !ignoreCancel && axiosCanceler.addPending(config);
-      if (requestInterceptors && isFunction(requestInterceptors)) {
-        config = requestInterceptors(config, this.options);
-      }
-      return config;
-    }, undefined);
+    // this.axiosInstance.interceptors.request.use((config: AxiosRequestConfig) => {
+    //   const {
+    //     headers: { ignoreCancelToken },
+    //   } = config;
+    //   const ignoreCancel =
+    //     ignoreCancelToken !== undefined
+    //       ? ignoreCancelToken
+    //       : this.options.requestOptions?.ignoreCancelToken;
+    //
+    //   !ignoreCancel && axiosCanceler.addPending(config);
+    //   if (requestInterceptors && isFunction(requestInterceptors)) {
+    //     config = requestInterceptors(config, this.options);
+    //   }
+    //   return config;
+    // }, undefined);
 
     // 请求拦截器错误捕获
     requestInterceptorsCatch &&

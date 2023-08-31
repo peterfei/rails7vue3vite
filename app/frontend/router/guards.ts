@@ -1,11 +1,11 @@
 import type { RouteRecordRaw } from 'vue-router';
 import { isNavigationFailure, Router } from 'vue-router';
-import { useUser } from '@/store/modules/user';
-import { useAsyncRoute } from '@/store/modules/asyncRoute';
-import { ACCESS_TOKEN } from '@/store/mutation-types';
-import { storage } from '@/utils/Storage';
-import { PageEnum } from '@/enums/pageEnum';
-import { ErrorPageRoute } from '@/router/base';
+import { useUser } from '../store/modules/user';
+import { useAsyncRoute } from '../store/modules/asyncRoute';
+import { ACCESS_TOKEN } from '../store/mutation-types';
+import { storage } from '../utils/Storage';
+import { PageEnum } from '../enums/pageEnum';
+import { ErrorPageRoute } from '../router/base';
 
 const LOGIN_PATH = PageEnum.BASE_LOGIN;
 

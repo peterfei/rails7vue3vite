@@ -56,7 +56,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
                 },
                 {
                     find: '@',
-                    replacement: pathResolve('src') + '/',
+                    replacement: pathResolve('app/frontend/') + '/',
                 },
             ],
             dedupe: ['vue'],
@@ -80,10 +80,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
             outDir: OUTPUT_DIR,
             reportCompressedSize: false,
             chunkSizeWarningLimit: 2000,
-            manifest: true,
-            rollupOptions: {
-                input: "/app/frontend/entrypoints/application.js"
-            }
+            manifest: true
         },
     };
 };

@@ -134,8 +134,8 @@
   import type { GridProps } from 'naive-ui/lib/grid';
   import type { FormSchema, FormProps, FormActionType } from './types/form';
 
-  import { isArray } from '@/utils/is/index';
-  import { deepMerge } from '@/utils';
+  import { isArray } from '../../..//utils/is/index';
+  import { deepMerge } from '../../../utils';
 
   export default defineComponent({
     name: 'BasicForm',
