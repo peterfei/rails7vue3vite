@@ -15,8 +15,7 @@ console.log('Visit the guide for more information: ', 'https://vite-ruby.netlify
 
 // Example: Load Rails libraries in Vite.
 //
-// import * as Turbo from '@hotwired/turbo'
-// Turbo.start()
+import * as Turbo from '@hotwired/turbo'
 //
 // import ActiveStorage from '@rails/activestorage'
 // ActiveStorage.start()
@@ -30,6 +29,7 @@ import {createApp} from 'vue';
 import Blogs from "../components/views/Blogs.vue";
 const blogsElement = document.querySelector("#blogs");
 if (blogsElement) {
+    Turbo.start()
     const blog = createApp(Blogs);
     blog.mount(blogsElement);
 }
