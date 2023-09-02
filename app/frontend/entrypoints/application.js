@@ -16,6 +16,22 @@ console.log('Visit the guide for more information: ', 'https://vite-ruby.netlify
 // Example: Load Rails libraries in Vite.
 //
 import * as Turbo from '@hotwired/turbo'
+Turbo.start();
+import TurbolinksAdapter from "vue-turbolinks";
+import {createApp} from 'vue';
+import Blogs from "../components/views/Blogs.vue";
+import vuetify from "./plugins/vuetify";
+
+document.addEventListener("turbo:load", () => {
+    const blogsElement = document.querySelector("#blogs");
+    if (blogsElement) {
+        const blog = createApp(Blogs);
+        blog.use(vuetify);
+        blog.use(TurbolinksAdapter)
+        blog.mount(blogsElement);
+    }
+});
+
 //
 // import ActiveStorage from '@rails/activestorage'
 // ActiveStorage.start()
@@ -25,11 +41,4 @@ import * as Turbo from '@hotwired/turbo'
 
 // Example: Import a stylesheet in app/frontend/index.css
 // import '~/index.css'
-import {createApp} from 'vue';
-import Blogs from "../components/views/Blogs.vue";
-const blogsElement = document.querySelector("#blogs");
-if (blogsElement) {
-    Turbo.start()
-    const blog = createApp(Blogs);
-    blog.mount(blogsElement);
-}
+

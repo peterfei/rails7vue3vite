@@ -13,14 +13,19 @@
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-ruby": "^3.2.0",
     "vite-plugin-stimulus-hmr": "^3.0.0",
+    "vite-plugin-vuetify": "^1.0.2",
     "vue": "^3.3.4"
   },
   "dependencies": {
+    "@hotwired/turbo-rails": "^7.3.0",
+    "@mdi/js": "^7.2.96",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.6",
     "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.15",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.3.3",
+    "vue-turbolinks": "^2.2.2",
+    "vuetify": "^3.3.15"
   }
 }
