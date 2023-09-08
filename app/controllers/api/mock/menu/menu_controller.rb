@@ -1,5 +1,5 @@
 module Api
-  module V1
+  module Mock
     class Menu::MenuController < ApplicationController
       def index
         render json:

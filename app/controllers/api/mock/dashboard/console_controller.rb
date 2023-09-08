@@ -1,5 +1,5 @@
 module Api
-  module V1
+  module Mock
     class Dashboard::ConsoleController < ApplicationController
       def console
         render json: { success: "ok", result: {

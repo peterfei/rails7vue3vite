@@ -2,12 +2,20 @@
 <html>
   <head>
     <title>MyrailsVue3</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+    <meta content="webkit" name="renderer"/>
+    <meta
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0"
+      name="viewport"
+      />
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= vite_client_tag %>
-    <%= vite_javascript_tag 'application' %>
+    <%= vite_typescript_tag 'application', data: { "turbo-track": "reload" } %>
+    <%= vite_stylesheet_tag 'application' %>
+
     <!--
       If using a TypeScript entrypoint file:
         vite_typescript_tag 'application'
@@ -126,5 +134,4 @@
   </div>
   <script>var globalThis = window;</script>
   </body>
-
 </html>

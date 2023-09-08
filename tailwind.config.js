@@ -4,24 +4,20 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
     content: [
+        './index.html',
         './app/helpers/**/*.rb',
         './app/assets/stylesheets/**/*.css',
         './app/views/**/*.{html,html.erb,erb}',
-        './app/javascript/components/**/*.js',
+        './app/javascript/components/**/*.{vue,ts,js,tsx}',
     ],
     theme: {
-        fontFamily: {
-            'sans': ["BlinkMacSystemFont", "Avenir Next", "Avenir",
-                "Nimbus Sans L", "Roboto", "Noto Sans", "Segoe UI", "Arial", "Helvetica",
-                "Helvetica Neue", "sans-serif"],
-            'mono': ["Consolas", "Menlo", "Monaco", "Andale Mono", "Ubuntu Mono", "monospace"]
-        },
         extend: {
         },
     },
     corePlugins: {
         aspectRatio: false,
     },
+    important: true,
     plugins: [
         require('@tailwindcss/typography'),
         require('@tailwindcss/forms'),

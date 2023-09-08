@@ -11,23 +11,6 @@ import pkg from './package.json';
 import { format } from 'date-fns';
 const { dependencies, devDependencies, name, version } = pkg;
 
-// export default defineConfig({
-//     clearScreen: false,
-//     plugins: [
-//         vue(),
-//         RubyPlugin(),
-//         StimulusHMR(),
-//         FullReload(["config/routes.rb", "app/views/**/*"], {delay: 200})
-//     ],
-//     root: "./app/assets",
-//     build: {
-//         manifest: true,
-//         rollupOptions: {
-//             input: "/app/frontend/entrypoints/application.js"
-//         }
-//     }
-// })
-//
 const __APP_INFO__ = {
     pkg: { dependencies, devDependencies, name, version },
     lastBuildTime: format(new Date(), 'yyyy-MM-dd HH:mm:ss'),

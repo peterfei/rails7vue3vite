@@ -1,5 +1,5 @@
 module Api
-  module V1
+  module Mock
     class Role::RoleController < ApplicationController
       def index
         render json:

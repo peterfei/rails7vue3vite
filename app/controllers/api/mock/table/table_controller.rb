@@ -1,5 +1,5 @@
 module Api
-  module V1
+  module Mock
     class Table::TableController < ApplicationController
       def index
         render json:

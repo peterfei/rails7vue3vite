@@ -1,5 +1,5 @@
 module Api
-  class V1::BlogsController < ApplicationController
+  class Mock::BlogsController < ApplicationController
     def blogs_json
       blogs = Blog.select(:id, :title, :desc)
 

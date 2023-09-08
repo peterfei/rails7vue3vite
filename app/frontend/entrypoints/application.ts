@@ -13,11 +13,11 @@ console.log('Vite ⚡️ Rails')
 
 console.log('Visit the guide for more information: ', 'https://vite-ruby.netlify.app/guide/rails')
 
-import '../styles/tailwind.css';
+import '@/styles/tailwind.css';
 import { createApp } from 'vue';
-import { setupNaiveDiscreteApi, setupNaive, setupDirectives } from '../plugins';
-import App from '../App.vue';
-import router, { setupRouter } from '../router';
+import { setupNaiveDiscreteApi, setupNaive, setupDirectives } from '@/plugins';
+import App from '@/App.vue';
+import router, { setupRouter } from '@/router';
 import { setupStore } from '@/store';
 
 async function bootstrap() {
