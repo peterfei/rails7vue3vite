@@ -1,8 +1,16 @@
-# Rails 7 with vite + vue3 +Naive Ui Admin
+# Rails 7 with vite + vue3 +TypeScript+Naive Ui Admin
 
 我以vite_javascript_tag和vite_stylesheet_tag各自代替了javascript_include_tag和stylesheet_link_tag helper，并把vite.json中的sourceCodeDir的值更新为frontend（代替了 Rails 的app/javascript方案）。
 
 ## Step 1: Clone 项目
+
+>  项目地址:[rails7vue3vite]([URL]https://github.com/peterfei/rails7vue3vite)
+
+```
+git clone git@github.com:peterfei/rails7vue3vite.git
+```
+
+如果对你全栈学习有所帮助，劳烦给个Star
 
 ```
 bundle
