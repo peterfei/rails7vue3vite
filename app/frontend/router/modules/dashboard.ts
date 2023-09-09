@@ -38,15 +38,15 @@ const routes: Array<RouteRecordRaw> = [
         },
         component: () => import('@/views/dashboard/console/console.vue'),
       },
-      // {
-      //   path: 'monitor',
-      //   name: `${ routeName }_monitor`,
-      //   meta: {
-      //     title: '监控页',
-      //     permissions: ['dashboard_monitor']
-      //   },
-      //   component: () => import('@/views/dashboard/monitor/monitor.vue')
-      // },
+      {
+        path: 'monitor',
+        name: `${ routeName }_monitor`,
+        meta: {
+          title: '监控页',
+          permissions: ['dashboard_monitor']
+        },
+        component: () => import('@/views/dashboard/monitor/monitor.vue')
+      },
       {
         path: 'workplace',
         name: `${routeName}_workplace`,
