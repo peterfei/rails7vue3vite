@@ -2,7 +2,7 @@
 
 ## 简介
 
-> 基于 [Vue3.0](https://github.com/vuejs/vue-next)、[Vite](https://github.com/vitejs/vite)、 [Naive UI](https://www.naiveui.com/)、[TypeScript](https://www.typescriptlang.org/)  Rails 的中后台解决方案，它使用了最新的前端技术栈，并提炼了典型的业务模型，页面，包括二次封装组件、动态菜单、权限校验、粒子化权限控制等功能，它可以帮助你快速搭建企业级中后台项目，该项目使用最新的前端技术栈，相信不管是从新技术使用还是其他方面，都能帮助到你。
+> 基于 [Vue3.0](https://github.com/vuejs/vue-next)、[Vite](https://github.com/vitejs/vite)、 [Naive UI](https://www.naiveui.com/)、[TypeScript](https://www.typescriptlang.org/)、 [Rails](https://rubyonrails.org/) 的中后台解决方案，它使用了最新的前端技术栈，并提炼了典型的业务模型，页面，包括二次封装组件、动态菜单、权限校验、粒子化权限控制等功能，它可以帮助你快速搭建企业级中后台项目，该项目使用最新的前端技术栈，相信不管是从新技术使用还是其他方面，都能帮助到你。
 >
 > 我以vite_javascript_tag和vite_stylesheet_tag各自代替了javascript_include_tag和stylesheet_link_tag helper，并把vite.json中的sourceCodeDir的值更新为frontend（代替了 Rails 的app/javascript方案）。
 
@@ -67,7 +67,7 @@ rails s
 
 
 
-![image-20230908164216812](/Users/mac/Downloads/blog/image-20230908164216812.png)
+![image-20230908164216812](http://image-peterfei-blog.test.upcdn.net/image-20230908164216812.png)
 
 ![image-20230908164302276](http://image-peterfei-blog.test.upcdn.net/image-20230908164302276.png)
 
